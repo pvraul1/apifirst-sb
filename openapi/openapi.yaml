@@ -20,7 +20,7 @@ info:
 
     guesswprl in calling the service.
 
- tags:
+  tags:
 #  - name: Echo
 #    description: "Example echo operations."
   - name: User
