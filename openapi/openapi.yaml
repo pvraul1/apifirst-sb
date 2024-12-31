@@ -20,7 +20,7 @@ info:
 
     guesswprl in calling the service.
 
-  tags:
+tags:
   - name: Customer
     description: "Customer operations."
   - name: User
