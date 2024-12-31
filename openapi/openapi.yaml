@@ -21,8 +21,8 @@ info:
     guesswprl in calling the service.
 
   tags:
-#  - name: Echo
-#    description: "Example echo operations."
+  - name: Customer
+    description: "Customer operations."
   - name: User
     description: "Example actions on user accounts."
 #  - name: Admin
@@ -41,6 +41,8 @@ servers:
 paths:
   '/users/{username}':
     $ref: 'paths/users_{username}.yaml'
+  '/v1/customers':
+    $ref: 'paths/v1/customers.yaml'
  # '/user':
  #   $ref: 'paths/user.yaml'
  # '/user/list':
@@ -51,6 +53,8 @@ paths:
  #   $ref: paths/pathItemWithExamples.yaml
  # '/echo':
  #   $ref: 'paths/echo.yaml'
+security:
+  - basic_auth: []
 components:
   securitySchemes:
     main_auth:
