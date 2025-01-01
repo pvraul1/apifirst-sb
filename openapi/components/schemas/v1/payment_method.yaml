@@ -7,7 +7,7 @@ properties:
   displayName:
     type: string
     description: "The display name of the payment method."
-    example: "John Doe's Visa"
+    example: "My Chase Card"
     minLength: 2
     maxLength: 100
   cardNumber:
@@ -21,7 +21,7 @@ properties:
   expiryYear:
     type: integer
     description: "The expiry year of the payment method."
-    example: 2023
+    example: 26
   cvv:
     type: integer
     description: "The CVV of the payment method."

@@ -1,6 +1,6 @@
 get: 
   tags: 
-    -  "Customer"
+    -  "Product"
   summary: "Get a product by ID."
   description: "Returns a single product."
   operationId: getProductById
