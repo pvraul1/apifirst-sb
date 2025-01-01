@@ -24,4 +24,8 @@ properties:
     type: array
     description: "The payment methods of the customer."
     items:
-      $ref: payment_method.yaml    
+      $ref: payment_method.yaml
+required: 
+  - name
+  - shipToAddress
+  - billToAddress

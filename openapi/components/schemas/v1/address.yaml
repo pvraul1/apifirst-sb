@@ -34,3 +34,8 @@ properties:
     example: "12345"
     minLength: 5
     maxLength: 10
+required: 
+  -  addressline1
+  -  city
+  -  state
+  -  zip
