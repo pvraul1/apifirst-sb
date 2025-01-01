@@ -8,19 +8,29 @@ properties:
     type: string
     description: "The first line of the customer's address."
     example: "123 Main St."
+    minLength: 3
+    maxLength: 100
   addressline2:
     type: string
     description: "The second line of the customer's address."
     example: "Suite 200"
+    minLength: 3
+    maxLength: 100
   city:
     type: string
     description: "The city of the customer's address."
     example: "Anytown"
+    minLength: 2
+    maxLength: 100
   state:
     type: string
-    description: "The state of the customer's address."
+    description: "Two characters state code of the customer's address."
     example: "WA"
+    minLength: 2
+    maxLength: 2
   zip:
     type: string
     description: "The zip code of the customer's address."
     example: "12345"
+    minLength: 5
+    maxLength: 10

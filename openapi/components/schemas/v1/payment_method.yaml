@@ -8,6 +8,8 @@ properties:
     type: string
     description: "The display name of the payment method."
     example: "John Doe's Visa"
+    minLength: 2
+    maxLength: 100
   cardNumber:
     type: integer
     description: "The card number of the payment method."

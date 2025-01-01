@@ -13,9 +13,13 @@ properties:
   email:
     type: string
     description: "The email address of the customer."
+    maxLength: 255
+    minLength: 3
   phone:
     type: string
     description: "The phone number of the customer."
+    maxLength: 15
+    minLength: 7
   paymentMethod:
     type: array
     description: "The payment methods of the customer."
