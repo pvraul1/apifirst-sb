@@ -39,17 +39,9 @@ properties:
     minLength: 5
     maxLength: 10
   dateCreated:
-    type: string
-    format: date-time
-    description: "The date the payment method was created."
-    example: "2021-01-01T00:00:00Z"
-    readOnly: true
+    $ref: '../common/iso_timestamp.yaml'
   dateUpdated:
-    type: string
-    format: date-time
-    description: "The date the payment method was last updated."
-    example: "2021-01-01T00:00:00Z"
-    readOnly: true
+    $ref: '../common/iso_timestamp.yaml'
 required: 
   -  addressline1
   -  city
