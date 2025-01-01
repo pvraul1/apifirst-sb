@@ -4,6 +4,8 @@ properties:
     type: string
     format: uuid
     description: "The unique identifier of the customer."
+    example: "123e4567-e89b-12d3-a456-426614174000"
+    readOnly: true
   addressline1:
     type: string
     description: "The first line of the customer's address."
@@ -11,7 +13,9 @@ properties:
     minLength: 3
     maxLength: 100
   addressline2:
-    type: string
+    type:
+      - string
+      - 'null'
     description: "The second line of the customer's address."
     example: "Suite 200"
     minLength: 3
@@ -34,6 +38,18 @@ properties:
     example: "33701"
     minLength: 5
     maxLength: 10
+  dateCreated:
+    type: string
+    format: date-time
+    description: "The date the payment method was created."
+    example: "2021-01-01T00:00:00Z"
+    readOnly: true
+  dateUpdated:
+    type: string
+    format: date-time
+    description: "The date the payment method was last updated."
+    example: "2021-01-01T00:00:00Z"
+    readOnly: true
 required: 
   -  addressline1
   -  city

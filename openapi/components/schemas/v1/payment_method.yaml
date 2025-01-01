@@ -31,8 +31,16 @@ properties:
     format: date-time
     description: "The date the payment method was created."
     example: "2021-01-01T00:00:00Z"
+    readOnly: true
   dateUpdated:
     type: string
     format: date-time
     description: "The date the payment method was last updated."
     example: "2021-01-01T00:00:00Z"
+    readOnly: true
+required:
+  - displayName
+  - cardNumber
+  - expiryMonth
+  - expiryYear
+  - cvv

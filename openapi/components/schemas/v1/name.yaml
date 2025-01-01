@@ -1,7 +1,9 @@
 type: object
 properties:
   prefix:
-    type: string
+    type:
+      - string
+      - 'null'
     description: "The prefix of the customer's name."
     example: "Mr."
     minLength: 0
@@ -19,7 +21,9 @@ properties:
     minLength: 2
     maxLength: 100
   suffix:
-    type: string
+    type:
+      - string
+      - 'null'
     description: "The suffix of the customer's name."
     example: "Jr."
     minLength: 0

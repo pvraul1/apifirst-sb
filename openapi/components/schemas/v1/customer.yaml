@@ -5,6 +5,7 @@ properties:
     format: uuid
     description: "The unique identifier of the customer."
     example: "123e4567-e89b-12d3-a456-426614174000"
+    readOnly: true
   name:
     $ref: 'name.yaml'
   shipToAddress:
@@ -12,13 +13,17 @@ properties:
   billToAddress:
     $ref: 'address.yaml'
   email:
-    type: string
+    type:
+      - string
+      - 'null'
     description: "The email address of the customer."
     maxLength: 255
     minLength: 3
     example: "rperezv365@gmail.com"
   phone:
-    type: string
+    type:
+      - string
+      - 'null'
     description: "The phone number of the customer."
     maxLength: 15
     minLength: 7
@@ -28,6 +33,18 @@ properties:
     description: "The payment methods of the customer."
     items:
       $ref: payment_method.yaml
+  dateCreated:
+    type: string
+    format: date-time
+    description: "The date the payment method was created."
+    example: "2021-01-01T00:00:00Z"
+    readOnly: true
+  dateUpdated:
+    type: string
+    format: date-time
+    description: "The date the payment method was last updated."
+    example: "2021-01-01T00:00:00Z"
+    readOnly: true
 required: 
   - name
   - shipToAddress
