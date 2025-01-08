@@ -13,13 +13,12 @@ properties:
     minLength: 3
     maxLength: 100
   addressline2:
-    type:
-      - string
-      - 'null'
+    type: string
     description: "The second line of the customer's address."
     example: "Suite 200"
     minLength: 3
     maxLength: 100
+    nullable: true
   city:
     type: string
     description: "The city of the customer's address."

@@ -20,6 +20,6 @@ get:
           schema:
             $ref: '../../components/schemas/v1/customer.yaml'
     '400':
-      description: "Invalid ID supplied"
+      description: "Bad Request."
     '404':
-      description: "Customer not found"
+      description: "Customer not found."

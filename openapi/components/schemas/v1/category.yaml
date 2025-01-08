@@ -15,7 +15,7 @@ properties:
     type: string
     description: "A description of the category."
     minLength: 3
-    maxLength: 25
+    maxLength: 255
     example: "Electronics and gadgets"
   dateCreated:
     $ref: '../common/iso_timestamp.yaml'

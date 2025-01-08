@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.0.3
 info:
   version: 1.0.0
   title: API First with Spring Boot
@@ -15,11 +15,6 @@ info:
   description: >
     This is an **example** API to demonstrate features of the OpenAPI
     specification.
-
-    # Introduction
-
-    guesswprl in calling the service.
-
 tags:
   - name: Customer
     description: "Customer operations."
@@ -68,21 +63,3 @@ components:
     basic_auth:
       type: http
       scheme: basic
-#webhooks:
-#  userInfo:
-#    post:
-#      summary: New user webhook
-#      description: "Information about a new user in the system."
-#      operationId: userInfo
-#      tags:
-#        - Info
-#      requestBody:
-#        content:
-#          application/json:
-#            schema:
-#              $ref: 'components/schemas/User.yaml'
-#      responses:
-#        '200':
-#          description: "Successfully retrieved information about a new user."
-#      security:
-#        - api_key: []
