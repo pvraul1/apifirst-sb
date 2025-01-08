@@ -6,13 +6,13 @@ properties:
     description: "The unique identifier of the customer."
     example: "123e4567-e89b-12d3-a456-426614174000"
     readOnly: true
-  addressline1:
+  addressLine1:
     type: string
     description: "The first line of the customer's address."
     example: "123 Main St."
     minLength: 3
     maxLength: 100
-  addressline2:
+  addressLine2:
     type: string
     description: "The second line of the customer's address."
     example: "Suite 200"
@@ -42,7 +42,7 @@ properties:
   dateUpdated:
     $ref: '../common/iso_timestamp.yaml'
 required: 
-  -  addressline1
+  -  addressLine1
   -  city
   -  state
   -  zip
