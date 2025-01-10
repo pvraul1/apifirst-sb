@@ -5,6 +5,7 @@ properties:
     format: uuid
     description: "The unique identifier for a product."
     readOnly: true
+    nullable: true
   description: 
     type: string
     description: "A description of the product."
