@@ -1,0 +1,15 @@
+type: object
+properties:
+  productId:
+    type: string
+    format: uuid
+    description: "The unique identifier of the product."
+  orderQuantity:
+    type: integer
+    description: "The quantity of the product in the order."
+    minimum: 1
+    maximum: 100
+    example: 2
+required: 
+  - productId
+  - orderQuantity
