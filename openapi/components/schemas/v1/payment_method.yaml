@@ -5,6 +5,7 @@ properties:
     format: uuid
     description: "The unique identifier of the payment method."
     readOnly: true
+    nullable: true
   displayName:
     type: string
     description: "The display name of the payment method."

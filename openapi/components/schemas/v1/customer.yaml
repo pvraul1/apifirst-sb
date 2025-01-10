@@ -6,6 +6,7 @@ properties:
     description: "The unique identifier of the customer."
     example: "123e4567-e89b-12d3-a456-426614174000"
     readOnly: true
+    nullable: true
   name:
     $ref: 'name.yaml'
   shipToAddress:
@@ -28,6 +29,7 @@ properties:
     nullable: true
   paymentMethods:
     type: array
+    nullable: true
     description: "The payment methods of the customer."
     items:
       $ref: payment_method.yaml
