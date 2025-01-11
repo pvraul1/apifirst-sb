@@ -1,6 +1,6 @@
 type: object  
 properties: 
-  cutomerId: 
+  customerId: 
     type: string
     format: uuid
     description: "The unique identifier of the customer."
