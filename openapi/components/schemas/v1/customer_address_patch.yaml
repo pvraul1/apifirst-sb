@@ -5,14 +5,13 @@ properties:
     format: uuid
     description: "The unique identifier of the customer."
     example: "123e4567-e89b-12d3-a456-426614174000"
-    readOnly: true
-    nullable: true
   addressLine1:
     type: string
     description: "The first line of the customer's address."
     example: "123 Main St."
     minLength: 3
     maxLength: 100
+    nullable: true
   addressLine2:
     type: string
     description: "The second line of the customer's address."
@@ -26,24 +25,20 @@ properties:
     example: "St Louis"
     minLength: 2
     maxLength: 100
+    nullable: true
   state:
     type: string
     description: "Two characters state code of the customer's address."
     example: "WA"
     minLength: 2
     maxLength: 2
+    nullable: true
   zip:
     type: string
     description: "The zip code of the customer's address."
     example: "33701"
     minLength: 5
     maxLength: 10
-  dateCreated:
-    $ref: '../common/iso_timestamp.yaml'
-  dateUpdated:
-    $ref: '../common/iso_timestamp.yaml'
+    nullable: true
 required: 
-  - addressLine1
-  - city
-  - state
-  - zip
+  - id

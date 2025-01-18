@@ -1,0 +1,37 @@
+ype: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "The unique identifier of the customer."
+    example: "123e4567-e89b-12d3-a456-426614174000"
+    readOnly: true
+    nullable: true
+  name:
+    $ref: 'customer_name_patch.yaml'
+  shipToAddress:
+    $ref: 'customer_address_patch.yaml'
+    nullable: true
+  billToAddress:
+    $ref: 'customer_address_patch.yaml'
+    nullable: true
+  email:
+    type: string
+    description: "The email address of the customer."
+    maxLength: 255
+    minLength: 3
+    example: "rperezv365@gmail.com"
+    nullable: true
+  phone:
+    type: string
+    description: "The phone number of the customer."
+    maxLength: 15
+    minLength: 7
+    example: "123-456-7890"
+    nullable: true
+  paymentMethods:
+    type: array
+    nullable: true
+    description: "The payment methods of the customer."
+    items:
+      $ref: customer_payment_method_path.yaml

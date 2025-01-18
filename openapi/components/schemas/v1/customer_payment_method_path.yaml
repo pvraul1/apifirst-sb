@@ -1,0 +1,35 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: "The unique identifier of the payment method."
+  displayName:
+    type: string
+    description: "The display name of the payment method."
+    example: "My Chase Card"
+    minLength: 2
+    maxLength: 100
+    nullable: true
+  cardNumber:
+    type: integer
+    description: "The card number of the payment method."
+    example: 4111111111111111
+    nullable: true
+  expiryMonth:
+    type: integer
+    description: "The expiry month of the payment method."  
+    example: 12
+    nullable: true
+  expiryYear:
+    type: integer
+    description: "The expiry year of the payment method."
+    example: 26
+    nullable: true
+  cvv:
+    type: integer
+    description: "The CVV of the payment method."
+    example: 123
+    nullable: true
+required:
+  - id
