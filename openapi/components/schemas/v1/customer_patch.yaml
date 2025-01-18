@@ -1,4 +1,4 @@
-ype: object
+type: object
 properties:
   id:
     type: string
