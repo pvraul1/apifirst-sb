@@ -5,13 +5,7 @@ get:
   description: "Returns a single product."
   operationId: getProductById
   parameters: 
-    - name: productId
-      in: path
-      description: "ID of product to return."
-      required: true
-      schema: 
-        type: string
-        format: uuid
+    - $ref: '../../components/paramaters/product_id.yaml'
   responses:
     '200':
       description: "successful operation"
@@ -30,13 +24,7 @@ put:
   description: "Updates an existing product."
   operationId: updateProductById
   parameters: 
-    - name: productId
-      in: path
-      description: "ID of product to update."
-      required: true
-      schema: 
-        type: string
-        format: uuid
+    - $ref: '../../components/paramaters/product_id.yaml'
   requestBody:
     required: true
     content:
@@ -61,13 +49,7 @@ patch:
   description: "Patches an existing product."
   operationId: patchProductById
   parameters: 
-    - name: productId
-      in: path
-      description: "ID of product to patch."
-      required: true
-      schema: 
-        type: string
-        format: uuid
+    - $ref: '../../components/paramaters/product_id.yaml'
   requestBody:
     required: true
     content:

@@ -4,14 +4,8 @@ get:
   summary: "Get a customer by ID."
   description: "Returns a single customer."
   operationId: getCustomerById
-  parameters: 
-    - name: customerId
-      in: path
-      description: "ID of customer to return."
-      required: true
-      schema: 
-        type: string
-        format: uuid
+  parameters:
+    - $ref: '../../components/paramaters/customer_id.yaml'
   responses:
     '200':
       description: "successful operation"
@@ -30,13 +24,7 @@ put:
   description: "Updates an existing customer."
   operationId: updateCustomerById
   parameters: 
-    - name: customerId
-      in: path
-      description: "ID of customer to update."
-      required: true
-      schema: 
-        type: string
-        format: uuid
+    - $ref: '../../components/paramaters/customer_id.yaml'
   requestBody:
     content:
       application/json:
@@ -60,13 +48,7 @@ patch:
   description: "Patches an existing customer."
   operationId: patchCustomerById
   parameters: 
-    - name: customerId
-      in: path
-      description: "ID of customer to patch."
-      required: true
-      schema: 
-        type: string
-        format: uuid
+    - $ref: '../../components/paramaters/customer_id.yaml'
   requestBody:
     content:
       application/json:
