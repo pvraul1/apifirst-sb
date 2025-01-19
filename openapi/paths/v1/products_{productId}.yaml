@@ -67,3 +67,18 @@ patch:
       description: "Bad Request."
     '404':
       description: "Product not found."
+delete:
+  tags:
+    - "Product"
+  summary: "Delete a product."
+  description: "Deletes a product."
+  operationId: deleteProductById
+  parameters: 
+    - $ref: '../../components/paramaters/product_id.yaml'
+  responses: 
+    '204':
+      description: "successful operation"
+    '400':
+      description: "Bad Request."
+    '404':
+      description: "Product not found."
