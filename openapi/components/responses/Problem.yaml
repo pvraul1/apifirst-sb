@@ -1,4 +1,4 @@
-description: Problem
+description: "Problem."
 content:
   application/problem+json:
     schema:
