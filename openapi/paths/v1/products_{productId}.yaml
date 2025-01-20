@@ -14,7 +14,7 @@ get:
           schema:
             $ref: '../../components/schemas/v1/product.yaml'
     '400':
-      description: "Bad Request."
+      $ref: '../../components/responses/bad_request_400.yaml'
     '404':
       $ref: '../../components/responses/not_found_404.yaml'
 put:
@@ -39,7 +39,7 @@ put:
           schema:
             $ref: '../../components/schemas/v1/product.yaml'
     '400':
-      description: "Bad Request."
+      $ref: '../../components/responses/bad_request_400.yaml'
     '404':
       $ref: '../../components/responses/not_found_404.yaml'
 patch:
@@ -64,7 +64,7 @@ patch:
           schema:
             $ref: '../../components/schemas/v1/product.yaml'
     '400':
-      description: "Bad Request."
+      $ref: '../../components/responses/bad_request_400.yaml'
     '404':
       $ref: '../../components/responses/not_found_404.yaml'
 delete:
@@ -79,8 +79,8 @@ delete:
     '204':
       description: "successful operation"
     '400':
-      description: "Bad Request."
+      $ref: '../../components/responses/bad_request_400.yaml'
     '404':
       $ref: '../../components/responses/not_found_404.yaml'
     '409':
-      description: "Conflict."
+      $ref: '../../components/responses/conflict_409.yaml'

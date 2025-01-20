@@ -12,15 +12,7 @@ get:
           schema:
             $ref: '../../components/schemas/v1/category_list.yaml'
     '400':
-      description: "Bad Request."
-      content:
-        application/json:
-          schema:
-            $ref: '../../components/schemas/Problem.yaml'
+      $ref: '../../components/responses/bad_request_400.yaml'
     '404':
-      description: "Not found."
-      content:
-        application/json:
-          schema:
-            $ref: '../../components/schemas/Problem.yaml'
+      $ref: '../../components/responses/not_found_404.yaml'
   

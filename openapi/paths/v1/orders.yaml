@@ -12,7 +12,7 @@ get:
           schema: 
             $ref: "../../components/schemas/v1/order_list.yaml"
     '400': 
-      description: "Bad Request."
+      $ref: "../../components/responses/bad_request_400.yaml"
     '404':
       $ref: '../../components/responses/not_found_404.yaml'
 post:
@@ -37,8 +37,4 @@ post:
             format: uri
             example: "/v1/orders/123e4567-e89b-12d3-a456-426614174000"
     '400': 
-      description: "Bad Request."
-      content:
-        application/json:
-          schema:
-            $ref: "../../components/schemas/Problem.yaml"
+      $ref: "../../components/responses/bad_request_400.yaml"

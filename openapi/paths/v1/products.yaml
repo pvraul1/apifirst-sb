@@ -36,9 +36,5 @@ post:
             format: uri
             example: "/v1/products/123e4567-e89b-12d3-a456-426614174000"
     '400':
-      description: "Bad request."
-      content:
-        application/json:
-          schema:
-            $ref: '../../components/schemas/Problem.yaml'
+      $ref: '../../components/responses/bad_request_400.yaml'
   
